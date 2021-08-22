@@ -5,9 +5,8 @@ https://ajcruz15.gitbook.io/apuntes-linux/
 
 
 **CHANGELOG**
-
-
-20-08-2021 Creación del recurso.<br>
-
-
+<br>
+<br>
+20-08-2021 Creación del recurso.
+<br>
 21-08-2021 Gran actualización de contenido.
