@@ -19,7 +19,7 @@
 * [09- REGISTROS](apuntes-terminal/09-registros.md)
 * [10- CORREO Y COLA DE IMPRESIÓN](apuntes-terminal/10-correo-y-cola-de-impresion.md)
 * [11- COMANDO AWK](apuntes-terminal/11-awk.md)
-* [12\_ACTUALIZAR\_KERNEL](apuntes-terminal/untitled.md)
+* [12\_ACTUALIZAR\_KERNEL](apuntes-terminal/12-actualizar-kernel.md)
 
 ## SHELL SCRIPTING
 
