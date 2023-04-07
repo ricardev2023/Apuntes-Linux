@@ -8,196 +8,208 @@ description: >-
 
 ## **DEFINICIONES**
 
-**PAQUETE** --&gt; conjunto de ficheros que forman un programa.
+**PAQUETE** --> conjunto de ficheros que forman un programa.
 
-**FICHERO** --&gt; unidad de instalacion basica.
+**FICHERO** --> unidad de instalacion basica.
 
-**DEPENDENCIAS** --&gt; algunos paquetes dependen de otros para funcionar, al instalar uno, normalmente  
- se instalan tambien sus dependencias.
+**DEPENDENCIAS** --> algunos paquetes dependen de otros para funcionar, al instalar uno, normalmente\
+&#x20;se instalan tambien sus dependencias.
 
-**DEPENDENCIAS HUERFANAS -**-&gt; Si desinstalamos mal una aplicación pueden quedar dependencias  
- inservibles que es recomendable eliminar.
+**DEPENDENCIAS HUERFANAS -**-> Si desinstalamos mal una aplicación pueden quedar dependencias\
+&#x20;inservibles que es recomendable eliminar.
 
 ## **APT-GET**
 
-**APT-GET** --&gt; Advance Packaging Tool. Permite utilizar comandos para la administración de paquetes.  
- P.E.--&gt; `sudo apt install nombre_programa #siempre con privilegios de superusuario.`
+**APT-GET** --> Advance Packaging Tool. Permite utilizar comandos para la administración de paquetes.\
+&#x20;P.E.--> `sudo apt install nombre_programa #siempre con privilegios de superusuario.`
 
 {% hint style="info" %}
 `En las nuevas versiones, el  gestor de paquetes se llama directamente con "apt" y no con "apt-get" que se encuentra deprecated.`
 {% endhint %}
 
- **UPDATE** --&gt; actualiza repositorios
+&#x20;**UPDATE** --> actualiza repositorios
 
- **UPGRADE** --&gt; actualiza los paquetes no criticos
+&#x20;**UPGRADE** --> actualiza los paquetes no criticos
 
- **DIST-UPGRADE** --&gt; actualiza TODOS los paquetes de la distribucion
+&#x20;**DIST-UPGRADE** --> actualiza TODOS los paquetes de la distribucion
 
- **FULL-UPGRADE** --&gt; lo mismo que el anterior
+&#x20;**FULL-UPGRADE** --> lo mismo que el anterior
 
- **INSTALL** --&gt; permite instalar nuevos paquetes o librerias siempre que esté en el  
- repositorio activo
+&#x20;**INSTALL** --> permite instalar nuevos paquetes o librerias siempre que esté en el\
+&#x20;repositorio activo
 
- **REMOVE** --&gt; desinstala un paquete
+&#x20;**REMOVE** --> desinstala un paquete
 
- **PURGE** --&gt; elimina tambien los archivos de configuración.
+&#x20;**PURGE** --> elimina tambien los archivos de configuración.
 
- **AUTOREMOVE** --&gt; elimina dependencias huerfanas.
+&#x20;**AUTOREMOVE** --> elimina dependencias huerfanas.
 
- **CLEAN** --&gt; limpia la cache de paquetes instalados.
+&#x20;**CLEAN** --> limpia la cache de paquetes instalados.
 
-**APT-CACHE** --&gt; muestra informacion sobre los paquetes que se encuentran en el repositorio
+**APT-CACHE** --> muestra informacion sobre los paquetes que se encuentran en el repositorio
 
- showrc --&gt; muestra las fuentes  
- search --&gt; busca en el repositorio paquetes relacionados  
- P.E: apt-cache search "Web" \(buscara todo lo que tenga que ver con la web\)  
- depends --&gt; muestra las dependencias del paquete \(rdepends inversas\)  
- show --&gt; muestra la descripcion del paquete  
- pkgnames --&gt; muestra nombre del paquete  
- policy --&gt; muestra parametros de las normas  
- stats --&gt; muestra estadísticas de la cache.  
- unmet --&gt; muestra dependencias incumplidas
+&#x20;showrc --> muestra las fuentes\
+&#x20;search --> busca en el repositorio paquetes relacionados\
+&#x20;P.E: apt-cache search "Web" (buscara todo lo que tenga que ver con la web)\
+&#x20;depends --> muestra las dependencias del paquete (rdepends inversas)\
+&#x20;show --> muestra la descripcion del paquete\
+&#x20;pkgnames --> muestra nombre del paquete\
+&#x20;policy --> muestra parametros de las normas\
+&#x20;stats --> muestra estadísticas de la cache.\
+&#x20;unmet --> muestra dependencias incumplidas
 
-**DSELECT** --&gt; Paquete de entorno gráfico para APT. Requiere instalación.
+**DSELECT** --> Paquete de entorno gráfico para APT. Requiere instalación.
 
-**APTITUDE** --&gt; APT pero mejorado. Gestiona mejor las dependencias.  
- tiene las mismas opciones que APT
+**APTITUDE** --> APT pero mejorado. Gestiona mejor las dependencias.\
+&#x20;tiene las mismas opciones que APT
 
-**SYNAPTIC** --&gt; APT con entorno grafico. Requiere instalación.
+**SYNAPTIC** --> APT con entorno grafico. Requiere instalación.
 
 ## **DPKG**
 
-**DPKG** --&gt; Programa que permite instalar paquetes .deb \(arquitectura debian\)
+**DPKG** --> Programa que permite instalar paquetes .deb (arquitectura debian)
 
- `-i` --&gt; instalar paquetes  
- P.E. `dpkg -i *.deb #instalara todos los paquetes .deb en la carpeta en uso.`  
- `-l` --&gt; lista paquetes .deb instalados  
- P.E. `dpkg -l thunderbird #sin .deb comprueba si está instalado`  
- `-r` --&gt; desinstala paquetes .deb instalados  
- P.E. `dpkg -r thunderbird #sin .deb desintala el programa`  
- `-P` --&gt; purgar. Elimina los archivos de configuración despues de desinstalar  
- `-L` --&gt; lista todos los ficheros de un paquete.  
- `-S` --&gt; lista los paquetes a los que esta asociado un determinado fichero  
- `-V` --&gt; verifica la integridad del paquete.  
- `--info` --&gt; da información del paquete  
- `--reconfigure` --&gt; permite reconfigurar el gestor de paquetes si ha dejado de funcionar
+&#x20;`-i` --> instalar paquetes\
+&#x20;P.E. `dpkg -i *.deb #instalara todos los paquetes .deb en la carpeta en uso.`\
+&#x20;`-l` --> lista paquetes .deb instalados\
+&#x20;P.E. `dpkg -l thunderbird #sin .deb comprueba si está instalado`\
+&#x20;`-r` --> desinstala paquetes .deb instalados\
+&#x20;P.E. `dpkg -r thunderbird #sin .deb desintala el programa`\
+&#x20;`-P` --> purgar. Elimina los archivos de configuración despues de desinstalar\
+&#x20;`-L` --> lista todos los ficheros de un paquete.\
+&#x20;`-S` --> lista los paquetes a los que esta asociado un determinado fichero\
+&#x20;`-V` --> verifica la integridad del paquete.\
+&#x20;`--info` --> da información del paquete\
+&#x20;`--reconfigure` --> permite reconfigurar el gestor de paquetes si ha dejado de funcionar
 
 ## **YUM**
 
-Yellow Dog Update Modified. \(mejora de la instalacion de RPM\)
+Yellow Dog Update Modified. (mejora de la instalacion de RPM)
 
- **CHECK-UPDATE** --&gt; actualiza los repositorios \(eq APT-GET UPDATE\)
+&#x20;**CHECK-UPDATE** --> actualiza los repositorios (eq APT-GET UPDATE)
 
- **UPDATE** --&gt; actualiza los paquetes no criticos \(eq APT-GET UPGRADE\)
+&#x20;**UPDATE** --> actualiza los paquetes no criticos (eq APT-GET UPGRADE)
 
- **UPGRADE** --&gt; actualiza TODOS los paquetes \(eq APT-GET DIST-UPGRADE\)
+&#x20;**UPGRADE** --> actualiza TODOS los paquetes (eq APT-GET DIST-UPGRADE)
 
- **SEARCH** --&gt; busca un paquete en los repositorios \(eq APT-CACHE SEARCH\)
+&#x20;**SEARCH** --> busca un paquete en los repositorios (eq APT-CACHE SEARCH)
 
- **INFO** --&gt; muestra informacion de un paquete \(eq APT-GET SHOW\)
+&#x20;**INFO** --> muestra informacion de un paquete (eq APT-GET SHOW)
 
- **INSTALL** --&gt; instala un paquete \(eq APT-GET INSTALL\)
+&#x20;**INSTALL** --> instala un paquete (eq APT-GET INSTALL)
 
- **ERASE** --&gt; desinstala un paquete \(eq APT-GET REMOVE\)
+&#x20;**ERASE** --> desinstala un paquete (eq APT-GET REMOVE)
 
-**YUMDOWNLOADER** --&gt; Programa que permite descargar paquetes rpm  
- No los instala, solo los descarga  
- Se obtiene instalando yum-utils
+**YUMDOWNLOADER** --> Programa que permite descargar paquetes rpm\
+&#x20;No los instala, solo los descarga\
+&#x20;Se obtiene instalando yum-utils
 
-**/etc/yum.conf** --&gt; archivo de configuracion de yum  
-**/etc/ym.repos.d** --&gt; directorio con los repositorios de yum  
-**/var/log/yum.log** --&gt; log de eventos de yum
+**/etc/yum.conf** --> archivo de configuracion de yum\
+**/etc/ym.repos.d** --> directorio con los repositorios de yum\
+**/var/log/yum.log** --> log de eventos de yum
 
 ## **RPM**
 
-Red Hat Package Manager \(gestor en Fedora, Red Hat, CentOS, etc\)
+Red Hat Package Manager (gestor en Fedora, Red Hat, CentOS, etc)
 
- Parametros  
- `-q` --&gt; Query \(comprueba los paquetes existentes\)  
- Opciones generales  
- `-a` --&gt; all. Todos los paquetes ¿de la base de datos rpm?  
- `-f` --&gt; file. Encuentra el paquete de un archivo indicado  
- `-g` --&gt; group. Paquetes que tienen un grupo  
- `-p` --&gt; package. Paquete no instalados \(con nombre concreto\)
+&#x20;Parametros\
+&#x20;`-q` --> Query (comprueba los paquetes existentes)\
+&#x20;Opciones generales\
+&#x20;`-a` --> all. Todos los paquetes ¿de la base de datos rpm?\
+&#x20;`-f` --> file. Encuentra el paquete de un archivo indicado\
+&#x20;`-g` --> group. Paquetes que tienen un grupo\
+&#x20;`-p` --> package. Paquete no instalados (con nombre concreto)
 
-* Opciones especificas \(van acompañando a las opciones generales\)  `--changelog` --&gt; log de cambio de versiones  `-c` --&gt; archivos de configuracion que usa el paquete  `-i` --&gt; muestra información del paquete  `-l` --&gt; lista los paquetes instalados \(con -p no funciona\)  `-s` --&gt; estado de los archivos o directorios  `-R` --&gt; muestra las dependencias
+* Opciones especificas (van acompañando a las opciones generales)\
+  &#x20;`--changelog` --> log de cambio de versiones\
+  &#x20;`-c` --> archivos de configuracion que usa el paquete\
+  &#x20;`-i` --> muestra información del paquete\
+  &#x20;`-l` --> lista los paquetes instalados (con -p no funciona)\
+  &#x20;`-s` --> estado de los archivos o directorios\
+  &#x20;`-R` --> muestra las dependencias
 
- `-V` --&gt; Verify \(si esta descargado, nos dirá el estado del archivo .rpm\)
+&#x20;`-V` --> Verify (si esta descargado, nos dirá el estado del archivo .rpm)
 
-* Opciones generales \(las misma que -q\)
-* Opciones especificas  `-nodeps` --&gt; no verifica dependencias  `-nofiles` --&gt; no verifica atributos del archivo  `-nomtime` --&gt; no verifica cambio de modificacion  `-nosize` --&gt; no verifica cambio de tamaño  `-nouser` --&gt; no veridica cambio de usuarios  `-nordev` --&gt; no verifica correspondencia de los atributos
+* Opciones generales (las misma que -q)
+* Opciones especificas\
+  &#x20;`-nodeps` --> no verifica dependencias\
+  &#x20;`-nofiles` --> no verifica atributos del archivo\
+  &#x20;`-nomtime` --> no verifica cambio de modificacion\
+  &#x20;`-nosize` --> no verifica cambio de tamaño\
+  &#x20;`-nouser` --> no veridica cambio de usuarios\
+  &#x20;`-nordev` --> no verifica correspondencia de los atributos
 
- `-i` --&gt; instala el paquete  
- `--allfiles` --&gt; instala los paquetes que faltan  
- `--excludedocs` --&gt; instala sin archivos de documentación  
- `--force` --&gt; fuerza la instalación o actualizacion  
- `--hash (-h)` --&gt; imprime los hashes
+&#x20;`-i` --> instala el paquete\
+&#x20;`--allfiles` --> instala los paquetes que faltan\
+&#x20;`--excludedocs` --> instala sin archivos de documentación\
+&#x20;`--force` --> fuerza la instalación o actualizacion\
+&#x20;`--hash (-h)` --> imprime los hashes
 
- `-U` --&gt; actualiza y si no esta el paquete, lo instala  
- `--ignoresize` --&gt; ignora el tamaño disponible en destino  
- `--ignorearch` --&gt; ignora la arquitectura en destino  
- `--ignoreos` --&gt; ignora Sist. Op. en destino  
- `--includedocs` --&gt; instala archivos de documentacion
+&#x20;`-U` --> actualiza y si no esta el paquete, lo instala\
+&#x20;`--ignoresize` --> ignora el tamaño disponible en destino\
+&#x20;`--ignorearch` --> ignora la arquitectura en destino\
+&#x20;`--ignoreos` --> ignora Sist. Op. en destino\
+&#x20;`--includedocs` --> instala archivos de documentacion
 
- `-F` --&gt; actualiza y si no esta el paquete, NO lo instala  
- `--justdb` --&gt; solo actualiza la base de datos  
- `--nodigest` --&gt; ignora digest  
- `--nosignature` --&gt; ignora la firma del paquete  
- `--nodeps` --&gt; evita problemas con dependencias  
- `--noorder` --&gt; no reordena la lista de paquetes  
- `--noplugins` --&gt; no ejecuta ni carga plugins  
- `--oldpackage` --&gt; version anterior  
- `--percent` --&gt; muesta porcentaje  
- `--test` --&gt; realiza un test sin instalar  
- `-e` --&gt; elimina un paquete
+&#x20;`-F` --> actualiza y si no esta el paquete, NO lo instala\
+&#x20;`--justdb` --> solo actualiza la base de datos\
+&#x20;`--nodigest` --> ignora digest\
+&#x20;`--nosignature` --> ignora la firma del paquete\
+&#x20;`--nodeps` --> evita problemas con dependencias\
+&#x20;`--noorder` --> no reordena la lista de paquetes\
+&#x20;`--noplugins` --> no ejecuta ni carga plugins\
+&#x20;`--oldpackage` --> version anterior\
+&#x20;`--percent` --> muesta porcentaje\
+&#x20;`--test` --> realiza un test sin instalar\
+&#x20;`-e` --> elimina un paquete
 
- Salidas en Verificar
+&#x20;Salidas en Verificar
 
- **S** --&gt; tamaño cambiado  
- **M** --&gt; permisos cambiados  
- **5** --&gt; Digest MD5 cambiado  
- **D** --&gt; modificación del archivo  
- **L** --&gt; cambios de enlaces  
- **U** --&gt; usuario propietario modificado  
- **G** --&gt; grupo propietario modificado  
- **T** --&gt; fecha modificacion alterada  
- **P** --&gt; capacidades modificadas
+&#x20;**S** --> tamaño cambiado\
+&#x20;**M** --> permisos cambiados\
+&#x20;**5** --> Digest MD5 cambiado\
+&#x20;**D** --> modificación del archivo\
+&#x20;**L** --> cambios de enlaces\
+&#x20;**U** --> usuario propietario modificado\
+&#x20;**G** --> grupo propietario modificado\
+&#x20;**T** --> fecha modificacion alterada\
+&#x20;**P** --> capacidades modificadas
 
- **c** --&gt; archivo de configuracion  
- **d** --&gt; archivo de documentacion  
- **g** --&gt; archivo con contenido no incluido en el paquete  
- **l** --&gt; archivo de licencia  
- **r** --&gt; archivo de texto
+&#x20;**c** --> archivo de configuracion\
+&#x20;**d** --> archivo de documentacion\
+&#x20;**g** --> archivo con contenido no incluido en el paquete\
+&#x20;**l** --> archivo de licencia\
+&#x20;**r** --> archivo de texto
 
-**/var/lib/rpm** --&gt; base de datos de aplicaciones .rpm
+**/var/lib/rpm** --> base de datos de aplicaciones .rpm
 
-**ALIEN** --&gt; \(Programa que permite ejecutar paquetes .rpm\) \*Es posible que requiera instalación\*
+**ALIEN** --> (Programa que permite ejecutar paquetes .rpm) \*Es posible que requiera instalación\*
 
 ## **TAR**
 
 Permite trabajar con archivos comprimidos .tar
 
- `-c` --&gt; crear un fichero  
- `-f` --&gt; especificar la ruta  
- `-v` --&gt; modo verbose  
- `-x` --&gt; extraer fichero  
- `-z` --&gt; comprime o descomprime en gzip \(.gz\)  
- `-j` --&gt; comprime o descomprime en bzip2 \(.bz2\)  
- `-J` --&gt; comprime o descomprime en xz \(.xz\)  
- `-t` --&gt; lista los archivos que se encuentran dentro del comprimido.  
- P.E:  
- `tar -cvf [ruta del contenedor creado] [ruta de archivos que van dentro del contenedor]`  
- crea un contenedor .tar con los archivos de la ruta seleccionada  
- `tar -zcvf [ruta del contenedor creado] [ruta de archivos que van dentro del contenedor]`  
- crea in contenedor .tar.gz comprimido con los archivos seleccionados.
+&#x20;`-c` --> crear un fichero\
+&#x20;`-f` --> especificar la ruta\
+&#x20;`-v` --> modo verbose\
+&#x20;`-x` --> extraer fichero\
+&#x20;`-z` --> comprime o descomprime en gzip (.gz)\
+&#x20;`-j` --> comprime o descomprime en bzip2 (.bz2)\
+&#x20;`-J` --> comprime o descomprime en xz (.xz)\
+&#x20;`-t` --> lista los archivos que se encuentran dentro del comprimido.\
+&#x20;P.E:\
+&#x20;`tar -cvf [ruta del contenedor creado] [ruta de archivos que van dentro del contenedor]`\
+&#x20;crea un contenedor .tar con los archivos de la ruta seleccionada\
+&#x20;`tar -zcvf [ruta del contenedor creado] [ruta de archivos que van dentro del contenedor]`\
+&#x20;crea in contenedor .tar.gz comprimido con los archivos seleccionados.
 
-**GUNZIP** --&gt; Descomprime un archivo .gz
+**GUNZIP** --> Descomprime un archivo .gz
 
-**MAKE** --&gt; \(Compila un programa\)
+**MAKE** --> (Compila un programa)
 
 ## **DESCARGAR DE GITHUB**
 
-Se pueden descargar aplicaciones desde GITHUB en binarios lo que permite instalarlas en el entorno LINUX.  
+Se pueden descargar aplicaciones desde GITHUB en binarios lo que permite instalarlas en el entorno LINUX.\
 Para ello, puedo descargarla directamente de la web y si no, puede utilizar el comando:
 
 `git clone [ruta web]`
@@ -209,4 +221,3 @@ Normalmente habrá un archivo llamado configure, para las configuraciones previa
 Despues, tendremos el archivo INSTALL.sh
 
 Para compilar los archivos necesarios del programa, empezamos con el comando make. Este comando lista los archivos a compilar y los compila de uno en uno.
-
