@@ -13,5 +13,5 @@ En los enlaces de la izquierda podrán encontrar:
 * Los apuntes de **Python** para principiantes.
 * El enlace a mi **github** donde podrán encontrar todos mis proyectos.
 
-_strelock_\
-_ajcruz15@protonmail.com  (No duden en enviar propuestas y correcciones)_
+_Ricardev_\
+_contacto"ricar.dev  (No duden en enviar propuestas y correcciones)_

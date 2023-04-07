@@ -4,7 +4,7 @@
 * [Apuntes Red Team](https://ajcruz15.gitbook.io/red-team/)
 * [Apuntes Blue Team](https://ajcruz15.gitbook.io/blue-team/)
 * [Apuntes Python](https://ajcruz15.gitbook.io/apuntes-python/)
-* [strelock15 github](https://github.com/strelock15)
+* [Ricardev github](https://github.com/ricardev2023)
 
 ## APUNTES TERMINAL
 
